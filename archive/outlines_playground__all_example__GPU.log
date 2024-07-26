@@ -1,0 +1,35 @@
+2024-07-26 14:31:49,565 - [DEBUG] | Loading model from model_path='.\\mistral-7b-instruct-v0.2.Q8_0.gguf'
+2024-07-26 14:31:52,848 - [DEBUG] | Loaded model: model=<outlines.models.llamacpp.LlamaCpp object at 0x0000022052E25710>
+
+2024-07-26 14:31:52,848 - [INFO] | Running quickstart example...
+2024-07-26 14:31:52,848 - [DEBUG] | Setting up generator.
+2024-07-26 14:31:52,848 - [INFO] | Running inference.
+2024-07-26 14:31:52,848 - [DEBUG] | Running Prompt: What's 2+2?. Config: {'max_tokens': 100}
+2024-07-26 14:31:55,042 - [INFO] | Result:  This question might seem simple enough, but the answer can be anything you want it to be, according to the ethical philosopher John Searle. At least that's how he's described the issue in the wake of the artificial intelligence revolution.
+
+"People say, 'Of course, 2 + 2 = 4. You know that in the real world. What's all this fuss about?' Well, that's just it. We don't
+2024-07-26 14:31:55,044 - [DEBUG] | Runtime (example_quickstart): 2.1961123943328857
+2024-07-26 14:31:55,044 - [INFO] | Running regex example...
+2024-07-26 14:31:55,044 - [INFO] | Setting up generator.
+2024-07-26 14:31:57,471 - [INFO] | Running inference.
+2024-07-26 14:31:57,471 - [DEBUG] | Prompt: What's 2+2?. Config: {'max_tokens': 100, 'stop_at': ['.']}
+2024-07-26 14:31:57,840 - [INFO] | Result: 4
+2024-07-26 14:31:57,840 - [DEBUG] | Runtime (example_regex): 2.796135425567627
+2024-07-26 14:31:57,840 - [INFO] | Running choice example...
+2024-07-26 14:31:57,840 - [INFO] | Running Prompt: You are a sentiment-labelling assistant.
+Is the following review positive or negative?
+
+Review: "This restaurant is just awesome!"
+. Choices: ['Mostly Positive', 'Neutral', 'Mostly Negative']
+2024-07-26 14:31:58,427 - [INFO] | Answer: Mostly Positive
+2024-07-26 14:31:58,428 - [DEBUG] | Runtime (example_choice): 0.5872726440429688
+2024-07-26 14:31:58,428 - [INFO] | Running Pydantic example...
+2024-07-26 14:31:58,428 - [DEBUG] | Running generator with Character=<class '__main__.Character'>
+2024-07-26 14:32:00,546 - [INFO] | Setting up generator.
+2024-07-26 14:32:01,883 - [DEBUG] | Prmopt: Give me a character description..
+2024-07-26 14:32:01,883 - [INFO] | Generated character: name='John Doe' age=30 armor=<Armor.leather: 'leather'> weapon=<Weapon.sword: 'sword'> strength=15 intelligence=10 dexterity=13
+2024-07-26 14:32:01,884 - [DEBUG] | Type of character: <class '__main__.Character'>
+2024-07-26 14:32:01,884 - [DEBUG] | Character keys: {'name': 'John Doe', 'age': 30, 'armor': <Armor.leather: 'leather'>, 'weapon': <Weapon.sword: 'sword'>, 'strength': 15, 'intelligence': 10, 'dexterity': 13}
+2024-07-26 14:32:01,885 - [DEBUG] | Runtime (example_pydantic): 3.4570071697235107
+2024-07-26 14:32:01,885 - [INFO] | Done.
+2024-07-26 14:32:01,897 - [DEBUG] | Runtime (main): 12.332761764526367
