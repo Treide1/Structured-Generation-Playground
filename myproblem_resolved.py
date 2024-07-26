@@ -16,7 +16,7 @@ model = outlines.models.LlamaCpp(
 )
 
 # Construct structured sequence generator
-generator = outlines.generate.json(model, Character) # ERROR
+generator = outlines.generate.json(model, Character) # ERROR [Not anymore. Install outlines from main branch, not PyPI]
 
 character = generator("Give me a character description", max_tokens=100)
 print(f"Generated character: {character}") 
