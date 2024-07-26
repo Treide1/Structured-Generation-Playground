@@ -1,0 +1,32 @@
+2024-07-26 13:42:55,584 - [DEBUG] | Loading model from model_path='.\\mistral-7b-instruct-v0.2.Q8_0.gguf'
+2024-07-26 13:42:56,396 - [DEBUG] | Loaded model: model=<outlines.models.llamacpp.LlamaCpp object at 0x000002818DBA2410>
+
+2024-07-26 13:42:56,396 - [INFO] | Running quickstart example...
+2024-07-26 13:42:56,396 - [DEBUG] | Setting up generator.
+2024-07-26 13:42:56,396 - [INFO] | Running inference.
+2024-07-26 13:42:56,396 - [DEBUG] | Running Prompt: What's 2+2?. Config: {'max_tokens': 100}
+2024-07-26 13:43:26,970 - [INFO] | Result:  This question might seem simple enough, but the answer can be anything you want it to be, according to the Norwegian philosopher Hans Moons, when your assumption about what reality is undergoes a change. "Once, 2+2 was 4," says Moons. "But when we came to understand the number 0 as an essential part of arithmetic, we realized that 2+2 could also be anything but 4. It could be 10
+2024-07-26 13:43:26,970 - [DEBUG] | Runtime (example_quickstart): 30.57394790649414
+2024-07-26 13:43:26,970 - [INFO] | Running regex example...
+2024-07-26 13:43:26,970 - [INFO] | Setting up generator.
+2024-07-26 13:43:27,188 - [INFO] | Running inference.
+2024-07-26 13:43:27,188 - [DEBUG] | Prompt: What's 2+2?. Config: {'max_tokens': 100, 'stop_at': ['.']}
+2024-07-26 13:43:28,166 - [INFO] | Result: 4
+2024-07-26 13:43:28,166 - [DEBUG] | Runtime (example_regex): 1.196051836013794
+2024-07-26 13:43:28,166 - [INFO] | Running choice example...
+2024-07-26 13:43:28,166 - [INFO] | Running Prompt: You are a sentiment-labelling assistant.
+Is the following review positive or negative?
+
+Review: "This restaurant is just awesome!"
+. Choices: ['Mostly Positive', 'Neutral', 'Mostly Negative']
+2024-07-26 13:43:31,021 - [INFO] | Answer: Mostly Positive
+2024-07-26 13:43:31,022 - [DEBUG] | Runtime (example_choice): 2.8558661937713623
+2024-07-26 13:43:31,022 - [INFO] | Running Pydantic example...
+2024-07-26 13:43:31,022 - [DEBUG] | Running generator with Character=<class '__main__.Character'>
+2024-07-26 13:43:31,123 - [INFO] | Setting up generator.
+2024-07-26 13:43:49,165 - [DEBUG] | Prmopt: Give me a character description..
+2024-07-26 13:43:49,165 - [INFO] | Generated character: name='John Doe' age=30 armor=<Armor.leather: 'leather'> weapon=<Weapon.sword: 'sword'> strength=15 intelligence=10 dexterity=13
+2024-07-26 13:43:49,165 - [DEBUG] | Type of character: <class '__main__.Character'>
+2024-07-26 13:43:49,165 - [DEBUG] | Character keys: {'name': 'John Doe', 'age': 30, 'armor': <Armor.leather: 'leather'>, 'weapon': <Weapon.sword: 'sword'>, 'strength': 15, 'intelligence': 10, 'dexterity': 13}
+2024-07-26 13:43:49,166 - [DEBUG] | Runtime (example_pydantic): 18.143792867660522
+2024-07-26 13:43:49,166 - [INFO] | Done.
